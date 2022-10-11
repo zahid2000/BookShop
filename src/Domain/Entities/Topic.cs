@@ -9,5 +9,5 @@ public class Topic:BaseEntity
         Books = new HashSet<Book>();
     }
     public string Name { get; set; } = null!;
-    public IEnumerable<Book> Books { get; set; }
+    public ICollection<Book> Books { get; set; }
 }

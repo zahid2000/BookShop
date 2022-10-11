@@ -1,4 +1,5 @@
 ﻿using BookShop.Domain.Entities.BaseEntities;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace BookShop.Domain.Entities;
 
@@ -6,8 +7,8 @@ public class Format:BaseAuditableEntity
 {
     public Format()
     {
-        BookFormats=new HashSet<BookFormat>();
+        Books = new HashSet<Book>();
     }
     public string Name { get; set; } = null!;
-    public IEnumerable<BookFormat> BookFormats { get; set; }
+    public ICollection<Book> Books { get; set; }
 }

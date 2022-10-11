@@ -14,17 +14,17 @@ namespace BookShop.Infrastructure.Configurations
             builder.Property(b => b.CategoryId).IsRequired(true);
             builder.Property(b => b.AppUserId).IsRequired(true);
 
-            builder.HasOne(c => c.Category)
-                .WithMany(b => b.Books)
-                .HasForeignKey(x => x.CategoryId);
+            //builder.HasOne(c => c.Category)
+            //    .WithMany(b => b.Books)
+            //    .HasForeignKey(x => x.CategoryId);
 
-            builder.HasOne(t => t.Topic)
-                .WithMany(b => b.Books)
-                .HasForeignKey(t => t.TopicId);
+            //builder.HasOne(t => t.Topic)
+            //    .WithMany(b => b.Books)
+            //    .HasForeignKey(t => t.TopicId);
 
-            builder.HasOne(a => a.AppUser)
-                .WithMany(b => b.Books)
-                .HasForeignKey(x => x.AppUserId);
+            //builder.HasOne(a => a.AppUser)
+            //    .WithMany(b => b.Books)
+            //    .HasForeignKey(x => x.AppUserId);
 
 
         }

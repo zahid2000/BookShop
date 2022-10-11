@@ -10,6 +10,10 @@ public class Category : BaseAuditableEntity
     }
     public string Name { get; set; } = null!;
     public string? Description { get; set; }
-    public IEnumerable<Book> Books { get; set; }
+    public int? SubCategoryId { get; set; }
+    public Category SubCategory { get; set; }
+    public bool isMain { get; set; }
+    public ICollection<Category> SubCategories { get; set; }
+    public ICollection<Book> Books { get; set; }
 
 }

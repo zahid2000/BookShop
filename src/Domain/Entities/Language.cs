@@ -7,8 +7,8 @@ public class Language:BaseAuditableEntity
 {
     public Language()
     {
-        BookLanguages=new HashSet<BookLanguage>();
+        Books=new HashSet<Book>();
     }
     public string Name { get; set; } = null!;
-    public IEnumerable<BookLanguage> BookLanguages { get; set; }
+    public ICollection<Book> Books { get; set; }
 }
