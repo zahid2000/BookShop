@@ -1,7 +1,4 @@
-﻿using BookShop.Domain.Entities.Auth;
-using BookShop.Domain.Entities.BaseEntities;
-
-namespace BookShop.Domain.Entities;
+﻿namespace BookShop.Domain.Entities;
 
 public class Country:BaseEntity
 {
@@ -11,6 +8,6 @@ public class Country:BaseEntity
         States=new HashSet<State>();
     }
     public string Name { get; set; } = null!;
-    public ICollection<Address> Addresses { get; set; }
-    public ICollection<State> States { get; set; }
+    public virtual ICollection<Address> Addresses { get; set; }
+    public virtual ICollection<State> States { get; set; }
 }

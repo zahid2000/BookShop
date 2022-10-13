@@ -9,6 +9,6 @@ public class Author:BaseEntity
     public string FirstName { get; set; } = null!;
     public string LastName { get; set; } = null!;
     public string? Description { get; set; }
-    public ICollection<Book> Books;
+    public virtual ICollection<Book> Books { get; set; }
 
 }

@@ -7,5 +7,5 @@ public class Discount:BaseEntity
         Prices = new HashSet<Price>();
     }
     public double DiscountPercent { get; set; }
-    public ICollection<Price> Prices { get; set; }
+    public virtual ICollection<Price> Prices { get; set; }
 }

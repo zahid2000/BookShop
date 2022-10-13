@@ -6,6 +6,6 @@ public class OrderMethod:BaseEntity
     {
         Orders = new HashSet<Order>();
     }
-    public string Name { get; set; }
-    public ICollection<Order> Orders { get; set; }
+    public string Name { get; set; } = null!;
+    public virtual ICollection<Order> Orders { get; set; }
 }

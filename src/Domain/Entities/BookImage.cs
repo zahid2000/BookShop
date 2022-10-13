@@ -1,6 +1,4 @@
-﻿using BookShop.Domain.Entities.BaseEntities;
-
-namespace BookShop.Domain.Entities;
+﻿namespace BookShop.Domain.Entities;
 
 public class BookImage:BaseAuditableEntity
 {

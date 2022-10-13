@@ -1,6 +1,4 @@
-﻿using BookShop.Domain.Entities.BaseEntities;
-
-namespace BookShop.Domain.Entities;
+﻿namespace BookShop.Domain.Entities;
 
 public class Topic:BaseEntity
 {
@@ -9,5 +7,5 @@ public class Topic:BaseEntity
         Books = new HashSet<Book>();
     }
     public string Name { get; set; } = null!;
-    public ICollection<Book> Books { get; set; }
+    public virtual ICollection<Book> Books { get; set; }
 }
